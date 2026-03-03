@@ -18,6 +18,7 @@
     <script defer src="/__/firebase/12.10.0/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/12.10.0/firebase-remote-config-compat.js"></script>
     <script defer src="/__/firebase/12.10.0/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/12.10.0/firebase-firestore.js"></script>
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -34,11 +35,19 @@
       </div>
 
       <div class="mb-3">
-        <button id="add-todo-btn" class="btn btn-primary" onclick="googleLogin()">Login with Google</button>
+        <button id="login-btn" class="btn btn-primary" onclick="googleLogin()">Login with Google</button>
+      </div>
+
+      <div class="mb-3">
+        <button id="readDB-btn" class="btn btn-primary" onclick="readDB()">Read db</button>
       </div>
 
       <div class="mb-3">
         <label for="user-name" class="form-label"><span id="user-name"></span></label>
+      </div>
+
+      <div class="mb-3">
+        <label for="user-data" class="form-label"><span id="user-data"></span></label>
       </div>
 
     </div>
